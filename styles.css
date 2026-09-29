@@ -1,0 +1,270 @@
+/* Reset e configurações gerais */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Roboto, sans-serif;
+}
+
+:root {
+    --primaria: #0077B6;
+    --secundaria: #00B4D8;
+    --destaque: #023E8A;
+    --claro: #f0f8fc;
+    --escuro: #03045E;
+    --texto: #333;
+    --branco: #fff;
+}
+
+body {
+    color: var(--texto);
+    line-height: 1.6;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.titulo-secao {
+    text-align: center;
+    color: var(--destaque);
+    margin-bottom: 2rem;
+    font-size: 1.8rem;
+}
+
+.secao {
+    padding: 3rem 0;
+}
+
+.fundo-claro {
+    background-color: var(--claro);
+}
+
+.fundo-destaque {
+    background-color: #e6f2f8;
+}
+
+.oculto {
+    display: none !important;
+}
+
+/* Cabeçalho */
+header {
+    background: linear-gradient(90deg, var(--primaria), var(--secundaria));
+    color: var(--branco);
+    padding: 1rem 0;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.logo h1 {
+    font-size: 1.4rem;
+}
+
+.menu-icone {
+    background: none;
+    border: none;
+    color: white;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+nav ul {
+    list-style: none;
+    width: 100%;
+    margin-top: 1rem;
+}
+
+nav ul li {
+    margin: 0.5rem 0;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    padding: 0.5rem;
+    display: block;
+    border-radius: 4px;
+    transition: background 0.3s;
+}
+
+nav a:hover {
+    background: rgba(255,255,255,0.2);
+}
+
+.btn-agendar {
+    background: var(--destaque);
+    font-weight: bold;
+    text-align: center;
+}
+
+/* Seção Início */
+.secao-inicio {
+    background: linear-gradient(rgba(0, 119, 182, 0.85), rgba(0, 180, 216, 0.7)), 
+                url('https://images.unsplash.com/photo-1519494026892-80bbd2d61d0d?w=1200') center/cover;
+    color: white;
+    padding: 5rem 0;
+    text-align: center;
+}
+
+.secao-inicio h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.secao-inicio p {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.btn-principal {
+    display: inline-block;
+    background: var(--destaque);
+    color: white;
+    padding: 0.8rem 2rem;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: transform 0.3s;
+}
+
+.btn-principal:hover {
+    transform: scale(1.05);
+}
+
+/* Diferenciais */
+.diferenciais {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1.5rem;
+    margin-top: 2rem;
+    text-align: center;
+}
+
+.diferencial i {
+    font-size: 2.5rem;
+    color: var(--primaria);
+    margin-bottom: 0.5rem;
+}
+
+/* Serviços e Equipe */
+.grade-servicos, .grade-equipe {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1.5rem;
+}
+
+.servico, .profissional {
+    background: white;
+    padding: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 3px 8px rgba(0,0,0,0.08);
+    text-align: center;
+    transition: transform 0.3s;
+}
+
+.servico:hover, .profissional:hover {
+    transform: translateY(-5px);
+}
+
+/* Formulário */
+form {
+    max-width: 600px;
+    margin: 0 auto;
+    background: white;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+}
+
+.grupo-form {
+    margin-bottom: 1.2rem;
+}
+
+label {
+    display: block;
+    margin-bottom: 0.4rem;
+    font-weight: 500;
+}
+
+input, select {
+    width: 100%;
+    padding: 0.8rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+.btn-enviar {
+    width: 100%;
+    background: var(--primaria);
+    color: white;
+    border: none;
+    padding: 1rem;
+    border-radius: 5px;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.btn-enviar:hover {
+    background: var(--destaque);
+}
+
+.sucesso {
+    text-align: center;
+    margin-top: 1rem;
+    font-weight: bold;
+    color: green;
+}
+
+/* Contato */
+#contato p {
+    margin: 0.8rem 0;
+    font-size: 1.05rem;
+}
+
+#contato i {
+    color: var(--primaria);
+    width: 25px;
+}
+
+/* Rodapé */
+footer {
+    background: var(--escuro);
+    color: white;
+    text-align: center;
+    padding: 1.5rem 0;
+    font-size: 0.9rem;
+}
+
+/* Responsividade para telas maiores */
+@media (min-width: 768px) {
+    .menu-icone {
+        display: none;
+    }
+    nav ul, nav ul.oculto {
+        display: flex;
+        gap: 0.8rem;
+        width: auto;
+        margin-top: 0;
+    }
+    .secao-inicio h2 {
+        font-size: 2.5rem;
+    }
+}

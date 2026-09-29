@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clínica Saúde & Vida</title>
+    <link rel="stylesheet" href="styles.css">
+    <!-- Ícones simples -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Cabeçalho -->
+    <header>
+        <div class="container">
+            <div class="logo">
+                <h1><i class="fas fa-heartbeat"></i> Clínica Saúde & Vida</h1>
+            </div>
+            <nav>
+                <button id="menu-btn" class="menu-icone">
+                    <i class="fas fa-bars"></i>
+                </button>
+                <ul id="menu-lista" class="oculto">
+                    <li><a href="#inicio">Início</a></li>
+                    <li><a href="#sobre">Sobre Nós</a></li>
+                    <li><a href="#servicos">Serviços</a></li>
+                    <li><a href="#equipe">Equipe</a></li>
+                    <li><a href="#contato">Contato</a></li>
+                    <li><a href="#agendamento" class="btn-agendar">Agendar</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Seção Início -->
+    <section id="inicio" class="secao-inicio">
+        <div class="container">
+            <h2>Cuidando de Você com Dedicação</h2>
+            <p>Atendimento humanizado, profissionais qualificados e estrutura completa para sua saúde.</p>
+            <a href="#agendamento" class="btn-principal">Agende sua Consulta</a>
+        </div>
+    </section>
+
+    <!-- Sobre Nós -->
+    <section id="sobre" class="secao">
+        <div class="container">
+            <h2 class="titulo-secao">Sobre Nós</h2>
+            <p>Fundada em 2010, a Clínica Saúde & Vida tem como missão oferecer atendimento médico de qualidade, com ética, respeito e tecnologia avançada. Localizada em Três Lagoas – MS, estamos prontos para receber você e sua família.</p>
+            <div class="diferenciais">
+                <div class="diferencial">
+                    <i class="fas fa-user-md"></i>
+                    <h3>Equipe Especializada</h3>
+                </div>
+                <div class="diferencial">
+                    <i class="fas fa-clock"></i>
+                    <h3>Atendimento Flexível</h3>
+                </div>
+                <div class="diferencial">
+                    <i class="fas fa-shield-alt"></i>
+                    <h3>Segurança e Conforto</h3>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Serviços -->
+    <section id="servicos" class="secao fundo-claro">
+        <div class="container">
+            <h2 class="titulo-secao">Nossos Serviços</h2>
+            <div class="grade-servicos">
+                <div class="servico">
+                    <h3>Clínica Geral</h3>
+                    <p>Atendimento completo para todas as idades.</p>
+                </div>
+                <div class="servico">
+                    <h3>Pediatria</h3>
+                    <p>Cuidados especializados com a saúde infantil.</p>
+                </div>
+                <div class="servico">
+                    <h3>Cardiologia</h3>
+                    <p>Prevenção e tratamento do coração.</p>
+                </div>
+                <div class="servico">
+                    <h3>Odontologia</h3>
+                    <p>Saúde bucal e estética dental.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Equipe -->
+    <section id="equipe" class="secao">
+        <div class="container">
+            <h2 class="titulo-secao">Nossa Equipe</h2>
+            <div class="grade-equipe">
+                <div class="profissional">
+                    <h3>Dr. Carlos Costa</h3>
+                    <p>Clínico Geral – CRM 123/MS</p>
+                </div>
+                <div class="profissional">
+                    <h3>Dra. Ana Beatriz</h3>
+                    <p>Pediatra – CRM 456/MS</p>
+                </div>
+                <div class="profissional">
+                    <h3>Dr. Marcos Almeida</h3>
+                    <p>Cardiologista – CRM 789/MS</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Agendamento -->
+    <section id="agendamento" class="secao fundo-destaque">
+        <div class="container">
+            <h2 class="titulo-secao">Agende sua Consulta</h2>
+            <form id="form-agendamento">
+                <div class="grupo-form">
+                    <label for="nome">Nome Completo</label>
+                    <input type="text" id="nome" required>
+                </div>
+                <div class="grupo-form">
+                    <label for="telefone">Telefone / WhatsApp</label>
+                    <input type="tel" id="telefone" required>
+                </div>
+                <div class="grupo-form">
+                    <label for="data">Data da Consulta</label>
+                    <input type="date" id="data" required>
+                </div>
+                <div class="grupo-form">
+                    <label for="servico">Especialidade desejada</label>
+                    <select id="servico" required>
+                        <option value="">Selecione...</option>
+                        <option value="clinica-geral">Clínica Geral</option>
+                        <option value="pediatria">Pediatria</option>
+                        <option value="cardiologia">Cardiologia</option>
+                        <option value="odontologia">Odontologia</option>
+                    </select>
+                </div>
+                <button type="submit" class="btn-enviar">Confirmar Agendamento</button>
+            </form>
+            <p id="mensagem-sucesso" class="sucesso oculto">✅ Agendamento enviado! Entraremos em contato em breve.</p>
+        </div>
+    </section>
+
+    <!-- Contato -->
+    <section id="contato" class="secao">
+        <div class="container">
+            <h2 class="titulo-secao">Contato</h2>
+            <p><i class="fas fa-map-marker-alt"></i> Av. Principal, 1000 – Centro, Três Lagoas – MS</p>
+            <p><i class="fas fa-phone"></i> (67) 9XXXX-XXXX</p>
+            <p><i class="fas fa-envelope"></i> contato@clinicasaudevida.com.br</p>
+            <p><i class="fas fa-clock"></i> Segunda a Sexta: 7h às 19h | Sábado: 8h às 12h</p>
+        </div>
+    </section>
+
+    <!-- Rodapé -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2026 Clínica Saúde & Vida – Todos os direitos reservados.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
